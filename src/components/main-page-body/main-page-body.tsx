@@ -27,7 +27,7 @@ const MainPageBody: React.FC = () => {
     setSearchResults(data);
   };
 
-  const onKeyPress = (ev: React.KeyboardEvent<any>) => {
+  const onKeyPress = (ev: React.KeyboardEvent<HTMLInputElement>) => {
     if(ev.key.toString() === 'Enter'){
       onClick()
     }
