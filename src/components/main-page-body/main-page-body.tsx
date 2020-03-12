@@ -1,11 +1,12 @@
 import React, { useState, SyntheticEvent } from 'react';
 import { Button, Container } from '@material-ui/core'; 
 import axios from 'axios';
-import spinner from '../../assets/spnr.gif'
 
+import spinner from '../../assets/spnr.gif'
 import { TSearchResult } from '../../type';
 import InputElement from '../input';
 import GridContainer from '../grid-container/grid-container';
+import Header from '../header';
 
 type SearchData = {
   data: TSearchResult[];
@@ -42,6 +43,7 @@ const MainPageBody: React.FC = () => {
 
   return (
     <React.Fragment>
+      <Header />
         <InputElement onChangeFn={onChange} onKeyDown={onKeyPress} />
         <Button
           type='button'

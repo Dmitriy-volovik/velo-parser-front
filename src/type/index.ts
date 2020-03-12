@@ -11,3 +11,8 @@ export type TSearchResult = {
 
 export type TShops = typeof shopsNames[number];
 export type TShopURL = typeof shopsURL[number];
+
+export type TLogin = {
+  email: string,
+  password: string
+}
